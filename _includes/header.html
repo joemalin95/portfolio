@@ -1,7 +1,157 @@
 <header class="masthead">
-  <h3 class="masthead-title">
-    <a href="{{ site.github.url }}/">{{ site.title }}</a>
-    <small class="masthead-subtitle">{{ site.description }}</small>
+    <div id="header-background" class="header-background">
+    </div>
+    <div id="header-container" class="header-container">
+        <div onclick="updateHeader()" class="header-toggle-btn">
+            <i id="header-toggle-icon" class="fa fa-arrow-up"></i>
+        </div>
+        <div class="header-title-container">
+            <div>
+                <h3>
+                    <span class="masthead-title" href="{{ site.github.url }}/">{{ site.title }}</a>
+                </h3>
+            </div>
+            <div>
+                <small class="masthead-subtitle">{{ site.description }}</small>
+            </div>
+        </div>
+        <div id="main-image-wrapper" class="main-image-wrapper">
+            <div class="main-image-container">
+                <img class="main-image" src="{{ site.github.url }}/assets/img/profile.jpg">
+            </div>
+        </div>
+    </div>
     {% include menu.html %}
-  </h3>
 </header>
+
+<!-- Near the end of my page -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<script>
+    var arrow_degrees = 0;
+
+    $(document).ready(function() {
+        var cookie = getCookie('collapse_header');
+
+
+        if (cookie === '1') {
+            $('#main-image-wrapper').hide()
+            $('#header-background').addClass('collapse');
+            $('#header-container').addClass('collapse');
+            $('#main-image-wrapper').addClass('collapse').promise().done(function() {
+                $('#main-image-wrapper').show();
+            });
+
+            current_degrees = subtract180Degrees();
+            $el = $('.header-toggle-btn');
+            rotate($el, current_degrees);
+        }
+
+    });
+
+    function updateHeader() {
+        var cookie = getCookie('collapse_header');
+
+        if (cookie === '1') {
+            console.log('hit 1')
+            showHeader(); 
+            setCookie('collapse_header','0',7);
+        } else if (cookie === '0') {
+            console.log('hit 0')
+            hideHeader(); 
+            setCookie('collapse_header','1',7);
+        } else {
+            console.log('hit 2')
+            hideHeader(); 
+            setCookie('collapse_header','1',7);
+        }
+
+    }
+
+    function hideHeader() {
+        current_degrees = subtract180Degrees();
+        $el = $('.header-toggle-btn');
+        rotate($el, current_degrees);
+        $('#main-image-wrapper').addClass('collapse');
+        $('#header-container').addClass('collapse');
+        $('#header-background').addClass('collapse');
+
+        addTransitions();
+    }
+
+
+    function showHeader() {
+        current_degrees = subtract180Degrees();
+        $el = $('.header-toggle-btn');
+        rotate($el, current_degrees);
+        $('#main-image-wrapper').removeClass('collapse');
+        $('#header-container').removeClass('collapse');
+        $('#header-background').removeClass('collapse');
+
+        addTransitions();
+    }
+
+    function setCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    function rotate($el, degrees) {
+        $el.css({
+      '-webkit-transform' : 'rotate('+degrees+'deg)',
+         '-moz-transform' : 'rotate('+degrees+'deg)',  
+          '-ms-transform' : 'rotate('+degrees+'deg)',  
+           '-o-transform' : 'rotate('+degrees+'deg)',  
+              'transform' : 'rotate('+degrees+'deg)',  
+                   'zoom' : 1
+
+        });
+    }
+
+    function addTransitions() {
+
+        var transition_styles =
+            { "transition-property": "all",
+              "transition-duration": "0.5s"
+            };
+
+        var toggle_icon_transitions =
+            { "transition": "transform 500ms ease"
+            }
+
+
+        $('.main-image-wrapper').css(transition_styles);
+        $('.header-background').css(transition_styles);
+        $('.header-container').css(transition_styles);
+        $('.header-toggle-btn').css(toggle_icon_transitions);
+
+    }
+
+
+    function subtract180Degrees() {
+        arrow_degrees = arrow_degrees - 180;
+        if (arrow_degrees == -18000) {
+            arrow_degrees = 0;
+        }
+
+        return arrow_degrees;
+    }
+
+</script>
