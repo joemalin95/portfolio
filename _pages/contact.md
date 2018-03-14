@@ -14,7 +14,7 @@ permalink: /contact/
 <div class="description-row">
         <span class="description-text">
             <p>
-                If you have an questions or would simply like to say hello, please fill out the form below and I will get back to you as soon as possible! If you prefer to call or email me directly, I have also included my direct contact information below.
+                If you have any questions or would simply like to say hello, please fill out the form below and I will get back to you as soon as possible! If you prefer to call or email me directly, I have also included my direct contact information below.
             </p>
             <div class="contact-info">
                 <div class="contact-info-row">

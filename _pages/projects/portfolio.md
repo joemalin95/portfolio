@@ -9,10 +9,10 @@ permalink: /projects/portfolio/
 <div class="description-row labs-page">
         <span class="description-text">
             <p>
-                I desgined this portfolio website using Jekyll, JavaScript, and CSS. I started off using a template, but quickly found that I would need to rewrite most of the code to make it work for me. I am currently hosting this through an Amazon Web Services EC2 Linux server that I use for my personal tech projects. 
+                I designed this portfolio website using Jekyll, JavaScript, and CSS. I started off using a template, but quickly found that I would need to rewrite most of the code to make it work for me. I am currently hosting this through an Amazon Web Services EC2 Linux server that I use for my personal tech projects. 
             </p>
             <p>
-                Since Jekyll produces static websites, I had the oppurtunity to focus solely on styling this website. One styling feature I have implemented is the ability to collapse the header by clicking on the arrow in the top right corner. My website then saves a cookie in your browser that remembers the header state and keeps it closed even after you visit a different page. Even though I did spend most of my time styling, I am still not satisfied with some of the spacing and colors, but plan to continue working on this in the near future.
+                Since Jekyll produces static websites, I had the opportunity to focus solely on styling this website. One styling feature I have implemented is the ability to collapse the header by clicking on the arrow in the top right corner. My website then saves a cookie in your browser that remembers the header state and keeps it closed even after you visit a different page. Even though I did spend most of my time styling, I am still not satisfied with some of the spacing and colors, but plan to continue working on this in the near future.
 
             </p>
         </span>
