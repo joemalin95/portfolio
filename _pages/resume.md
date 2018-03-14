@@ -23,5 +23,8 @@ permalink: /resume/
 </div>
 
 <div class="resume-container">
-    <img src="/assets/resume/resume.jpg">
+    <img class="modal-img" src="/assets/resume/resume.jpg">
 </div>
+
+{% include modal-border.html %}
+<script type="text/javascript" src="{{ site.github.url }}/assets/js/modal.js"></script>

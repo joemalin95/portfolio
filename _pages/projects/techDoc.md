@@ -14,8 +14,12 @@ permalink: /projects/tech-doc/
 </div>
 
 <div class="tech-doc-container">
-    <img src="/assets/techDoc/techDocPage1.jpg">
+    <img class="modal-img" src="/assets/techDoc/techDocPage1.jpg">
 </div>
 <div class="tech-doc-container">
-    <img src="/assets/techDoc/techDocPage2.jpg">
+    <img class="modal-img" src="/assets/techDoc/techDocPage2.jpg">
 </div>
+
+
+{% include modal-border.html %}
+<script type="text/javascript" src="{{ site.github.url }}/assets/js/modal.js"></script>

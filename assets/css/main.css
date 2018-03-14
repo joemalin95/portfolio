@@ -614,6 +614,10 @@ th, td {
     justify-content: center;
 }
 
+.labs-demo-btn>i {
+    margin-right: 15px;
+}
+
 .a-no-style {
     text-decoration: none !important;
 }
@@ -743,6 +747,10 @@ th, td {
     margin: 10px 0;
 }
 
+.PLACEHOLDER {
+    visibility: hidden !important;
+}
+
 /* Mobile Styling (Not Completed) */
 
 @media (min-width: 1024px) {
@@ -847,15 +855,11 @@ th, td {
 /* Modal Styling */
 
 /* Style the Image Used to Trigger the Modal */
-#modal-img {
+.modal-img {
     cursor: -moz-zoom-in; 
     cursor: -webkit-zoom-in; 
     cursor: zoom-in;
     transition: 0.3s;
-}
-
-#modal-img:hover {
-    opacity: 0.8;
 }
 
 /* The Modal (background) */
@@ -877,16 +881,22 @@ th, td {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 90%;
     height: 80%;
+    transform:scale(1.1)
+}
+
+.modal-content.border {
+    width: 90% !important;
+    padding: 30px 0;
+    transform:scale(1)
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 90%;
     text-align: center;
     color: #ccc;
     padding: 10px 0;
@@ -894,7 +904,17 @@ th, td {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
+.modal-content-wrapper { 
+    background-color: transparent;
+    margin: auto;
+    display: block;
+    width: 82%;
+    height: auto;
+}
+
+.modal-content-wrapper.border { 
+    background-color: white;
+    width: 82% !important;
     transform:scale(1.1)
 }
 

@@ -39,7 +39,7 @@ permalink: /projects/forms/
     </div>
 </div>
 <div class="tech-doc-container">
-    <img src="/assets/forms/forms1.png">
+    <img class="modal-img" src="/assets/forms/forms1.png">
 </div>
 
 <div class="screenshot-container">
@@ -51,7 +51,7 @@ permalink: /projects/forms/
     </div>
 </div>
 <div class="tech-doc-container">
-    <img src="/assets/forms/forms2.png">
+    <img class="modal-img" src="/assets/forms/forms2.png">
 </div>
 
 <div class="screenshot-container">
@@ -63,7 +63,7 @@ permalink: /projects/forms/
     </div>
 </div>
 <div class="tech-doc-container">
-    <img src="/assets/forms/forms3.png">
+    <img class="modal-img" src="/assets/forms/forms3.png">
 </div>
 
 <div class="screenshot-container">
@@ -75,6 +75,9 @@ permalink: /projects/forms/
     </div>
 </div>
 <div class="tech-doc-container">
-    <img src="/assets/forms/forms4.png">
+    <img class="modal-img" src="/assets/forms/forms4.png">
 </div>
 
+
+{% include modal-border.html %}
+<script type="text/javascript" src="{{ site.github.url }}/assets/js/modal.js"></script>

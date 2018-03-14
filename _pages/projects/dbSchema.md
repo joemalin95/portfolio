@@ -14,20 +14,8 @@ permalink: /projects/db-schema/
 </div>
 
 <div class="db-schema-container">
-    <img id="modal-img" src="/assets/dbSchema/db_schema.png">
+    <img class="modal-img" src="/assets/dbSchema/db_schema.png">
 </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="modal-content">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
-
+{% include modal.html %}
 <script type="text/javascript" src="{{ site.github.url }}/assets/js/modal.js"></script>
