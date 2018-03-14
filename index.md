@@ -14,6 +14,9 @@ title: Home
             </p>
             <p> Throughout my college and work experiences, I have acquired a set of technical skills that have equipped me to plan, design, and build software in a efficient and timely manner. I also have strengthed my set of interpersonal skills that allows me to work well on technical and non-technical teams. I am constantly striving to learn more and better myself as a programmer and a designer. I have built this web portfolio to showcase some of my past, current, and future projects, and it is my hope that as I continue to grow, so will this portfolio.
             </p>
+            <p>
+            If you have any questions or would like to reach out to me, my information can be found on the Contact page. Also, you can find links to my LinkedIn and Github profiles on the right side of the menu bar.
+            </p>
         </span>
 </div>
 

@@ -4,7 +4,7 @@ title: Forms
 permalink: /projects/forms/
 ---
 
-<div class="header-row with-description">
+<div class="header-row">
         <span class="header-text"> Forms </span>
 </div>
 <div class="description-row">

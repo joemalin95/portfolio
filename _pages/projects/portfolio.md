@@ -9,10 +9,11 @@ permalink: /projects/portfolio/
 <div class="description-row labs-page">
         <span class="description-text">
             <p>
-            The Labs page is a public facing Roompact page that allows our users to check up on the progress of projects that we are currently working on. I created the frontend and backend using Javascript, jQuery, and PHP. This feature also included a control panel that allows our team to create new projects and update them as we progress through the feature.
+                I desgined this portfolio website using Jekyll, JavaScript, and CSS. I started off using a template, but quickly found that I would need to rewrite most of the code to make it work for me. I am currently hosting this through an Amazon Web Services EC2 Linux server that I use for my personal tech projects. 
             </p>
             <p>
-            This feature demonstrates the visual design skills that I have acquired while working at Roompact. Each project has a gray box that contains the project name, icon, expected release, and description of the project. It also has a color coded progress bar that fills in when you scroll to view the project. Finally, each project has a collapsible list of updates that gives more insight into the developmental progress of the feature. 
+                Since Jekyll produces static websites, I had the oppurtunity to focus solely on styling this website. One styling feature I have implemented is the ability to collapse the header by clicking on the arrow in the top right corner. My website then saves a cookie in your browser that remembers the header state and keeps it closed even after you visit a different page. Even though I did spend most of my time styling, I am still not satisfied with some of the spacing and colors, but plan to continue working on this in the near future.
+
             </p>
         </span>
 </div>
